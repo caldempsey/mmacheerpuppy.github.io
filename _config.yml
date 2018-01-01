@@ -1,8 +1,8 @@
 # Site settings
-title: Hanuman
-description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+title: Callum Dempsey Leach
+description: Software Engineer and Mixed Martial Arts enthusiast.
 cover: assets/images/radhakrishna.jpg
-logo: assets/images/logo.png
+#logo: assets/images/logo.png
 favicon: assets/images/favicon.png
 baseurl: "/" # the subpath of your site, e.g. /blog/ or / for root
 url: "https://mmacheerpuppy.github.io/" # the base hostname & protocol for your site
@@ -15,8 +15,8 @@ github:  github
 
 #Additional Pages
 about: about
-contact: contact
-privacy-policy: privacy-policy
+#contact: contact
+#privacy-policy: privacy-policy
 
 
 permalink: /:title
