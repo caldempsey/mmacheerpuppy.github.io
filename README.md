@@ -1,1 +1,1 @@
-Github page utilizing native Jekyll integration to push and manage changes.
+Github page utilizing native Jekyll Hanuman theme
