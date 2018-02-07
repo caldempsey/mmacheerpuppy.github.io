@@ -22,7 +22,11 @@
                 {% assign current = null %}
             {% endif %}
       <li class="ampstart-nav-item ampstart-nav-dropdown relative " {{ current }}>
+<<<<<<< HEAD
           <li class="ampstart-faq-item"><a href="{{ site.url }}{{ site.baseurl }}{{ site.entryurl }}" class="text-decoration-none">{{ entry.title }}</a></li>
+=======
+          <li class="ampstart-faq-item"><a href="{{ site.baseurl }}{{ entry.url }}" class="text-decoration-none">{{ entry.title }}</a></li>
+>>>>>>> 64f0f7489ead682d198be96b2741b39988d2127b
       </li>
       {% endfor %}
     </ul>
