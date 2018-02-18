@@ -38,11 +38,21 @@ See CSS for CSS override customization -->
     <main role="main" class="inner cover">
         <h1 class="cover-headin">Callum Dempsey Leach</h1>
         <br>
-        <!-- Typed will print text using JS only if JS installed ^ is used to denote timeouts -->
+        <!-- Typically typed will print text using JS only if JS installed ^ is used to denote timeouts
+        For example
+
         <div id="typed-strings">
             <p class="lead">Software consultation^1000, design^1000, architecture,^1000 and development.</p>
         </div>
         <span id="typed" class="lead"></span>
+
+        Is valid
+
+         But we need to avoid inline ^s from displaying in no-script browsers. -->
+        <noscript>
+        <p class="lead">Software consultation^1000, design^1000, architecture,^1000 and development.</p>
+        </noscript>
+        <span id="typed-strings"></span><span id="typed" class="lead"></span>
     </main>
 
     <footer class="mastfoot mt-auto">
@@ -80,7 +90,7 @@ Configured with window timeout in-case loading delays for particles on slow mach
 <script src="libs/typed.js/lib/typed.min.js"></script>
 <script>
     var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
+        strings: ["Software consultation^1000, design^1000, architecture,^1000 and development."],
         typeSpeed: 25,
         showCursor: true,
         startDelay: 500
