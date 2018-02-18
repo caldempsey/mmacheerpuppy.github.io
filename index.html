@@ -20,37 +20,36 @@
 
 </head>
 
-
-<body class="text-center">
-
 <!-- Particles JS Wrapper and Bootstrap Cover Template -->
-<!-- Particles JS initialised before page loaded in separate div tag (is NOT a container (rather JS override)).
+<!-- Particles JS is initialised before page loaded in separate div tag (is NOT a container (rather JS override)). It could also be initialized using <div id = particles-js></div> (immediate closing tag).
 See CSS for CSS override customization -->
-<div id="particles-js"></div>
-   <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-        <header class="masthead mb-auto">
-            <div class="inner">
-                <nav class="nav nav-masthead justify-content-center">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link" href="Callum%20Dempsey%20Leach%20-%20Software%20Engineer%20-%20CV.pdf">Resume</a>
-                    <a class="nav-link" href="http://github.com/mmacheerpuppy">Github</a>
-                    <a class="nav-link" href="#">Contact</a>
-                </nav>
-            </div>
-        </header>
+<body class="text-center" id="particles-js">
 
-        <main role="main" class="inner cover">
-            <h1 class="cover-heading">Callum Dempsey Leach</h1>
-            <br>
-            <p class="lead">Full-stack software architecture, consultation, design, and development.</p>
-        </main>
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
-        <footer class="mastfoot mt-auto">
-            <div class="inner">
-                <p>Website libraries include <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://github.com/VincentGarreau/particles.js/"> particles.</a></p>
-            </div>
-        </footer>
-    </div>
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="Callum%20Dempsey%20Leach%20-%20Software%20Engineer%20-%20CV.pdf">Resume</a>
+                <a class="nav-link" href="http://github.com/mmacheerpuppy">Github</a>
+            </nav>
+        </div>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Callum Dempsey Leach</h1>
+        <br>
+        <p class="lead">Full-stack software architecture, consultation, design, and development.</p>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>Website libraries include <a href="https://getbootstrap.com/">Bootstrap</a> and <a
+                    href="https://github.com/VincentGarreau/particles.js/"> particles</a>.</p>
+        </div>
+    </footer>
+</div>
 
 <!-- JavaScript
 ================================================== -->
