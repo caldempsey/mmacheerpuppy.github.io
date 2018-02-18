@@ -114,7 +114,7 @@ https://stackoverflow.com/questions/45329225/how-to-set-background-image-for-who
 }
 
 .disable-pointer-events{
-    /*This allows us to click through the container (to click particles.js elements)*/
+    /*This allows us to click through the container (to click particles.js elements). By default this isn't possible.*/
     pointer-events: none;
 }
 
