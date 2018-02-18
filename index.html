@@ -1,88 +1,72 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/ico/favicon.ico">
+
+    <title>Callum Dempsey Leach - Full Stack Development</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <!-- Bootstrap core JS -->
+    <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <!-- Default styles for this template -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    <!-- CSS implemented animator for compatibility with non-JS devices (may revise to no-script for JS in the future) -->
+    <link rel="stylesheet" href="static/css/animator.css">
+
+</head>
 
 
-  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-    <amp-img width="404" height="720" alt="Cover" layout="responsive" src="{{ site.baseurl }}{{ site.cover }}" media="(max-width: 415px)"></amp-img>
-    <amp-img height="720" alt="Cover" layout="fixed-height" src="{{ site.baseurl }}{{ site.cover }}" media="(min-width: 416px)"></amp-img>
-    <figcaption class="absolute top-0 right-0 bottom-0 left-0">
-      <header class="p3">
-        <h1 class="ampstart-fullpage-hero-heading mb0 hanuman">
-          <span class="ampstart-fullpage-hero-heading-text title">
-            {{ site.title }}
-          </span>
-        </h1>
-        <h2 class="ampstart-fullpage-hero-heading mb0">
-          <span class="ampstart-fullpage-hero-heading-text description">
-            {{ site.description }}
-          </span>
-        </h2>
-    </header>
-    {% if site.cover %}
-    <footer class="absolute left-0 right-0 bottom-0">
-      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
-    </footer>
-    {% else %}
-    <footer class="absolute left-0 right-0 bottom-0">
-      <a class="ampstart-read py3 caps line-height-2 text-decoration-none center block h5" href="#content"><span class="ampstart-readmore-text px1">Read more</span></a>
-    </footer>
-    {% endif %}
-    </figcaption>
-  </figure>
+<body class="text-center">
 
-<main id="content" role="main" class="content">
+<!-- Particles JS Wrapper and Bootstrap Cover Template -->
+<!-- Particles JS initialised before page loaded in separate div tag (is NOT a container (rather JS override)).
+See CSS for CSS override customization -->
+<div id="particles-js"></div>
+   <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                <nav class="nav nav-masthead justify-content-center">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Resume</a>
+                    <a class="nav-link" href="#">Github</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
 
-  <div class="cf frame">
-    {% for post in paginator.posts %}
-      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-        <div class="article-item">
-          <header class="post-header">
-            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url | remove: '/'}}" itemprop="url">{{ post.title }}</a></h2>
-          </header>
-          <section class="post-excerpt" itemprop="description">
-            <p class="post-description">{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-          </section>
-          <div class="post-meta">
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Callum Dempsey Leach</h1>
+            <br>
+            <p class="lead">Full-stack software architecture, consultation, design, and development.</p>
+        </main>
 
-                {% if site.data.author["author"]["assets"] %}<amp-img width="24" height="24" class="author-thumb" layout="responsive" src="{{ site.baseurl }}{{site.data.author["author"]["assets"]}}" alt="Author image"/></amp-img>{% endif %}
-                <a href=''>{{site.data.author["author"]["name"]}}</a>
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Website libraries include <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://github.com/VincentGarreau/particles.js/"> particles.</a></p>
+            </div>
+        </footer>
+    </div>
 
-            {% if post.tags.size > 0 %}
-                in
-                {% for tag in post.tags %}
-                    {% if forloop.index == post.tags.size %}
-                       <a href=''>{{ tag | capitalize }}</a>
-                    {% else %}
-                       <a href=''>{{ tag | capitalize }}</a>,
-                    {% endif %}
-                {% endfor %}
-            {% endif %}
-              <time class="post-date" datetime="{{ post.date | date:'%Y-%m-%d' }}">{{ post.date | date_to_string }}</time>
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-
-  <nav class="pagination" role="navigation">
-    {% if paginator.next_page %}
-      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
-    {% else %}
-      <a class="newer-posts disabled">&larr; Older posts</a>
-    {% endif %}
-    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.previous_page %}
-      {% if paginator.page == 2 %}
-        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
-      {% else %}
-        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
-      {% endif %}
-    {% else %}
-      <a class="older-posts disabled">Newer posts &rarr;</a>
-    {% endif %}
-  </nav>
-
-</main>
-
-{% include footer.html %}
+<!-- JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="libs/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+<script src="libs/particles/particles.min.js"></script>
+<script>
+    particlesJS.load('particles-js', 'particles.json',
+        function () {
+            console.log("Doing space stuff...");
+            console.log('Loaded particles.json ...');
+        })
+</script>
+</body>
+</html>
