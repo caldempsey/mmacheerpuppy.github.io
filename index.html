@@ -14,41 +14,8 @@
     <!-- Default styles for this template -->
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/typed-js-blinking-cursor.css">
-
-
-    <!-- JavaScript
-    ================================================== -->
-    <!-- Placed at the beginning of the page to ensure nodes are loaded early -->
+    <!-- Initial JS to load -->
     <script src="libs/particles/particles.min.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-
-    <!-- Particles.js config.
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script>
-        particlesJS.load('particles-js', 'particles.json',
-            function () {
-                console.log("Doing space stuff...");
-                console.log('Loaded particles.json.');
-            })
-    </script>
-
-    <!-- Typed.js config.
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="libs/typed.js/lib/typed.min.js"></script>
-    <script>
-        var typed = new Typed('#typed', {
-            stringsElement: '#typed-strings',
-            typeSpeed: 70,
-            showCursor: false
-        });
-    </script>
-
 </head>
 
 <!-- Particles JS Wrapper and Bootstrap Cover Template -->
@@ -87,8 +54,34 @@ See CSS for CSS override customization -->
 
 <!-- JavaScript
 ================================================== -->
-<!-- Bootstrap is placed at the end of the document so the pages load faster -->
+<!-- Placed at the end of the document so the pages load faster -->
 <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+<!-- Particles.js config.
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script>
+    particlesJS.load('particles-js', 'particles.json',
+        function () {
+            console.log("Doing space stuff...");
+            console.log('Loaded particles.json.');
+        })
+</script>
+
+<!-- Typed.js config.
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="libs/typed.js/lib/typed.min.js"></script>
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 100,
+        showCursor: false
+    });
+</script>
 </body>
 </html>
