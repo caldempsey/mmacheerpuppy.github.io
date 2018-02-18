@@ -13,9 +13,7 @@
     <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
     <!-- Default styles for this template -->
     <link rel="stylesheet" href="static/css/styles.css">
-    <!-- CSS implemented animator for compatibility with non-JS devices (may revise to no-script for JS in the future) -->
-    <link rel="stylesheet" href="static/css/animator.css">
-
+    <link rel="stylesheet" href="static/css/typed-js-blinking-cursor.css">
 </head>
 
 <!-- Particles JS Wrapper and Bootstrap Cover Template -->
@@ -38,7 +36,10 @@ See CSS for CSS override customization -->
     <main role="main" class="inner cover">
         <h1 class="cover-headin">Callum Dempsey Leach</h1>
         <br>
-        <p class="lead">Software architecture, consultation, design, and development.</p>
+        <!-- Typed will print text using JS only if JS installed -->
+        <div id="typed-strings">
+            <p class="lead">Software consultation, design, architecture, and development.</p>
+        </div> <span id="typed" class="lead"></span>
     </main>
 
     <footer class="mastfoot mt-auto">
@@ -58,12 +59,28 @@ See CSS for CSS override customization -->
 <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
 <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.js"></script>
 <script src="libs/particles/particles.min.js"></script>
+
+<!-- Particles.js config.
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 <script>
     particlesJS.load('particles-js', 'particles.json',
         function () {
             console.log("Doing space stuff...");
             console.log('Loaded particles.json ...');
         })
+</script>
+
+<!-- Typed.js config.
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="libs/typed.js/lib/typed.min.js"></script>
+<script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        typeSpeed: 70,
+        showCursor: false
+    });
 </script>
 </body>
 </html>
