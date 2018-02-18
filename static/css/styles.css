@@ -113,10 +113,18 @@ https://stackoverflow.com/questions/45329225/how-to-set-background-image-for-who
     width: 100%;
 }
 
-/*Custom Styles*/
-.cover-container {
+.disable-pointer-events{
     /*This allows us to click through the container (to click particles.js elements)*/
     pointer-events: none;
+}
+
+.enable-pointer-events{
+    /*This allows us to click through the container (to click particles.js elements)*/
+    pointer-events: auto;
+}
+
+/*Custom Styles*/
+.cover-container {
     max-width: 50em;
     position: absolute;
 }
