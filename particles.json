@@ -1,7 +1,7 @@
 {
     "particles":{
         "number":{
-            "value":65
+            "value":30
         },
         "color":{
             "value":"#f9f3f4"
@@ -10,7 +10,7 @@
             "type":"circle",
             "stroke":{
                 "width":1,
-                "color":"#ccc"
+                "color":"#ffffff"
             }
         },
         "opacity":{
@@ -26,7 +26,7 @@
         },
         "move":{
             "enable":true,
-            "speed": 0.25
+            "speed": 0.1
         }
     }
 }
