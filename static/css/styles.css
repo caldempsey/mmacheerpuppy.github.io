@@ -126,21 +126,22 @@ https://stackoverflow.com/questions/45329225/how-to-set-background-image-for-who
     width: 100%;
 }
 
-.disable-pointer-events{
+.disable-pointer-events {
     /*This allows us to click through the container (to click particles.js elements). By default this is not possible.*/
     pointer-events: none;
 }
 
-.enable-pointer-events{
+.enable-pointer-events {
     /*This allows us to click through the container (to click particles.js elements)*/
     pointer-events: auto;
 }
 
 /*Custom Styles*/
 
-h1{
+h1 {
     font-family: -apple-system, "Nexa Bold", "Nexa", BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .cover-container {
     max-width: 47.5em;
     position: absolute;
