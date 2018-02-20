@@ -11,8 +11,10 @@ var pJS = function (tag_id, params) {
 
     var canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el');
 
-    /* custom-particles.js variables with default values */
+    /* particles.js variables with default values */
     this.pJS = {
+        // Default FPS limit implementation (see line 1311 for codified change - mmacheerpuppy).
+        fps_limit: 0,
         canvas: {
             el: canvas_el,
             w: canvas_el.offsetWidth,
@@ -1304,10 +1306,10 @@ var pJS = function (tag_id, params) {
 
     };
 
-
     pJS.fn.vendors.draw = function () {
-        var fps = 30;
-        setTimeout(function () { //throttle requestAnimationFrame to 20fps
+
+        // Default implementation of the draw function from and for particles.js library.
+        function defaultDraw() {
             if (pJS.particles.shape.type == 'image') {
 
                 if (pJS.tmp.img_type == 'svg') {
@@ -1338,7 +1340,20 @@ var pJS = function (tag_id, params) {
                 if (!pJS.particles.move.enable) cancelRequestAnimFrame(pJS.fn.drawAnimFrame);
                 else pJS.fn.drawAnimFrame = requestAnimFrame(pJS.fn.vendors.draw);
             }
-        }, 1000 / fps)
+        }
+
+        // FPS limit logic / implementation by github.com/mmacheerpuppy / callumleach.com.
+        // Check if the fps_limit has been set to a value other than 0 by default (and handle invalid input).
+        // If so, use a setTimeout method to apply the fps limit, if not, then unlock the FPS to the default v-sync.
+
+        var fps_limit = pJS.particles.fps_limit;
+        if (fps_limit <= 0) {
+
+        } else {
+            setTimeout(function () {
+                defaultDraw()
+            }, 1000 / fps_limit)
+        }
     };
 
 
@@ -1464,7 +1479,7 @@ function isInArray(value, array) {
 }
 
 
-/* ---------- custom-particles.js functions - start ------------ */
+/* ---------- particles.js functions - start ------------ */
 
 window.pJSDom = [];
 
