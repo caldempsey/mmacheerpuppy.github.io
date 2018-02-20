@@ -75,18 +75,17 @@ See CSS for CSS override customization -->
 <script src="/libs/particles/particles.min.js"></script>
 <!-- Typed core JS -->
 <script src="/libs/typed.js/lib/typed.js"></script>
-
 <!-- Particles.js and Typed.js config.
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster
 Typed JS configured with window timeout in-case loading delays for particles on slow machines (but does not delay loading). -->
 <script>
+    particlesJS.load('particles-js', 'particles.json',
+        function () {
+            console.log("Doing space stuff...");
+            console.log('Loaded particles.json.');
+        });
     $('document').ready(function () {
-        particlesJS.load('particles-js', 'particles.json',
-            function () {
-                console.log("Doing space stuff...");
-                console.log('Loaded particles.json.');
-            });
         var typed = new Typed('#typed', {
             strings: ["Softw^10are^72 de^13sign,^110 archi^12tecture,^220 develo^13pment,^102 and^65 cons^1ultation^10."],
             typeSpeed: 25,
