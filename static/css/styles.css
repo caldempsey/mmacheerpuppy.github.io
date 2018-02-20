@@ -41,7 +41,7 @@ a:hover {
  */
 
 html, body {
-    /**Set background to not move while scrolling in conjunction to particles.js effects
+    /**Set background to not move while scrolling in conjunction to custom-particles.js effects
 https://stackoverflow.com/questions/45329225/how-to-set-background-image-for-whole-bootstrap-container-fluid
 */
 
@@ -127,12 +127,12 @@ https://stackoverflow.com/questions/45329225/how-to-set-background-image-for-who
 }
 
 .disable-pointer-events {
-    /*This allows us to click through the container (to click particles.js elements). By default this is not possible.*/
+    /*This allows us to click through the container (to click custom-particles.js elements). By default this is not possible.*/
     pointer-events: none;
 }
 
 .enable-pointer-events {
-    /*This allows us to click through the container (to click particles.js elements)*/
+    /*This allows us to click through the container (to click custom-particles.js elements)*/
     pointer-events: auto;
 }
 

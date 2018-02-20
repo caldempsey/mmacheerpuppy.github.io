@@ -11,7 +11,7 @@ var pJS = function (tag_id, params) {
 
     var canvas_el = document.querySelector('#' + tag_id + ' > .particles-js-canvas-el');
 
-    /* particles.js variables with default values */
+    /* custom-particles.js variables with default values */
     this.pJS = {
         canvas: {
             el: canvas_el,
@@ -1306,7 +1306,7 @@ var pJS = function (tag_id, params) {
 
 
     pJS.fn.vendors.draw = function () {
-        var fps = 20;
+        var fps = 30;
         setTimeout(function () { //throttle requestAnimationFrame to 20fps
             if (pJS.particles.shape.type == 'image') {
 
@@ -1464,7 +1464,7 @@ function isInArray(value, array) {
 }
 
 
-/* ---------- particles.js functions - start ------------ */
+/* ---------- custom-particles.js functions - start ------------ */
 
 window.pJSDom = [];
 
