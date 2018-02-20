@@ -1,6 +1,6 @@
 {
   "particles": {
-    "fps_limit": 20,
+    "fps_limit": 60,
     "number": {
       "value": 35
     },
