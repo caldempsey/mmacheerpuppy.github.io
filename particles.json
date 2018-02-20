@@ -26,7 +26,7 @@
         },
         "move":{
             "enable":true,
-            "speed": 0.04
+            "speed": 999
         }
     }
 }
