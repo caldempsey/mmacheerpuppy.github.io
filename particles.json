@@ -28,6 +28,7 @@
     "move": {
       "enable": true,
       "random": false,
+      "striaght": true,
       "speed": 0.1,
       "direction": "left"
     }
