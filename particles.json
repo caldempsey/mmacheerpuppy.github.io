@@ -29,7 +29,7 @@
       "enable": true,
       "random": false,
       "striaght": true,
-      "speed": 0.1,
+      "speed": 0.07,
       "direction": "left"
     }
   }
