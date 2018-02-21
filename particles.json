@@ -26,7 +26,7 @@
       "distance": 100
     },
     "move": {
-      "direction": left,
+      "direction": "left",
       "enable": true,
       "speed": 0.15
     }
