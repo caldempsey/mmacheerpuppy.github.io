@@ -39,21 +39,21 @@ See CSS for CSS override customization -->
     <main role="main" class="inner cover">
         <h1 class="cover-heading">Callum Dempsey Leach</h1>
         <br>
-        <!-- Typically typed will print text using JS only if JS installed ^ is used to denote timeouts
-
-        For example...
-
-        <div id="typed-strings">
-            <p class="lead">Software consultation^1000, design^1000, architecture,^1000 and development.</p>
-        </div>
-        <span id="typed" class="lead"></span>
-
-        Is valid
-         But we need to avoid inline ^s from displaying in no-script browsers. -->
-        <noscript>
-            <p class="lead">Software design, architecture, development, and consultation.</p>
-        </noscript>
+        <!-- Static height to prevent header text from moving up as its generated-->
         <div class="set-height-90">
+            <noscript>
+                <p class="lead">Software design, architecture, development, and consultation.</p>
+            </noscript>
+            <!--
+            Typically typed will print text using JS only if JS installed ^ is used to denote timeouts
+                For example the following is valid...
+
+                <div id="typed-strings">
+                    <p class="lead">Software consultation^1000, design^1000, architecture,^1000 and development.</p>
+                </div>
+                <span id="typed" class="lead"></span>
+
+            But we need to avoid inline ^s from displaying in no-script browsers. -->
             <span class="lead" id="typed-strings"></span><span id="typed" class="lead"></span>
         </div>
     </main>
