@@ -104,6 +104,9 @@ h1 {
     position: absolute;
 }
 
-.set-min-height-280 {
-    height: 280px;
+
+/*Setters*/
+
+.set-height-90 {
+    height: 90px;
 }
