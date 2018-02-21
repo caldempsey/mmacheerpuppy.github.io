@@ -10,8 +10,8 @@
     "shape": {
       "type": "circle",
       "stroke": {
-        "width": 0.5,
-        "color": "#f6d26a"
+        "width": 1,
+        "color": "#ffffff"
       }
     },
     "opacity": {
