@@ -27,6 +27,7 @@
     },
     "move": {
       "enable": true,
+      "random": false,
       "speed": 0.15,
       "direction": "left"
     }
