@@ -8,14 +8,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="/static/ico/favicon.ico">
     <title>Callum Dempsey Leach (SWE)</title>
     <!-- Base CSS (ensure quick load of non-interactive content) -->
-    <link rel="stylesheet" href="/libs/bootstrap-4.0.0-dist/css/base.min.css">
+    <link rel="stylesheet" href="/static/css/base.min.css">
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <!-- Default styles for this template (Overrides bootstrap) -->
     <link rel="stylesheet" href="/static/css/styles.min.css">
     <!-- Minified blinking cursor effect (for use with typed.js) -->
     <link rel="stylesheet" href="/static/css/typed-js-blinking-cursor.min.css">
-
 </head>
 
 <!-- Particles JS Wrapper and Bootstrap Cover Template -->
@@ -54,7 +53,7 @@ See CSS for CSS override customization -->
         <noscript>
             <p class="lead">Software design, architecture, development, and consultation.</p>
         </noscript>
-        <p class="lead"><span id="typed-strings"></span><span id="typed" class="lead"></span></p>
+        <span class="lead" id="typed-strings"></span><span id="typed" class="lead"></span>
     </main>
 
     <footer class="mastfoot mt-auto">
@@ -80,7 +79,7 @@ See CSS for CSS override customization -->
 <!-- Placed at the end of the document so the pages load faster
 Typed JS configured with window timeout in-case loading delays for particles on slow machines (but does not delay loading). -->
 <script>
-    window.onload = function() {
+    window.onload = function () {
         particlesJS.load('particles-js', 'particles.json',
             function () {
                 console.log("Doing space stuff...");
@@ -88,7 +87,7 @@ Typed JS configured with window timeout in-case loading delays for particles on 
             });
         var typed = new Typed('#typed', {
             strings: ["Softw^10are^72 de^13sign,^110 archi^12tecture,^220 develo^13pment,^102 and^65 cons^1ultation^10."],
-            typeSpeed: 37,
+            typeSpeed: 20,
             showCursor: true,
             startDelay: 2000
         });
