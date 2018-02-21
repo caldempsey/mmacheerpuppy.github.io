@@ -26,8 +26,9 @@
       "distance": 100
     },
     "move": {
+      "direction": left,
       "enable": true,
-      "speed": 0.2
+      "speed": 0.15
     }
   }
 }
