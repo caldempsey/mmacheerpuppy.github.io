@@ -103,3 +103,7 @@ h1 {
     max-width: 47.5em;
     position: absolute;
 }
+
+.set-min-height-30 {
+    min-height: 30px;
+}
