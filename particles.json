@@ -27,7 +27,7 @@
       "value": 3
     },
     "line_linked": {
-      "enable": true,
+      "enable": false,
       "distance": 100
     },
     "move": {
